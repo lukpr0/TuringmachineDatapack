@@ -1,0 +1,2 @@
+kill @e[name="Head"]
+summon minecraft:armor_stand -0.51 56.10 4.50 {Marker:1,CustomName:'{"text":"Head"}',Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"trajan"}}]}

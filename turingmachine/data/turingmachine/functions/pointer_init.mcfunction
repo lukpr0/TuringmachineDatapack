@@ -1,0 +1,1 @@
+execute as @e[name="Marker"] run tp @e[name="Pointer"] @s

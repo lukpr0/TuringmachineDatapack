@@ -1,0 +1,7 @@
+execute as @e[name="Head"] at @s if blocks ~ ~ ~ ~ ~ ~ -5 57 4 all as @e[name="Pointer"] at @s if blocks ~ ~ ~ ~ ~ ~ -6 57 4 all run clone ~ ~ ~3 ~ ~ ~3 -7 57 4
+execute as @e[name="Pointer"] at @s if blocks ~ ~ ~ ~ ~ ~ -6 57 4 all as @e[name="Head"] at @s if blocks ~ ~ ~ ~ ~ ~ -5 57 4 all run clone -7 57 4 ~ ~ ~ ~ ~ ~
+execute as @e[name="Head"] at @s if blocks ~ ~ ~ ~ ~ ~ -5 57 4 all as @e[name="Pointer"] at @s if blocks ~ ~ ~ ~ ~ ~ -6 57 4 all run function turingmachine:reset_pointer
+execute as @e[name="Head"] at @s if blocks ~ ~ ~ ~ ~ ~ -5 57 4 all as @e[name="Pointer"] at @s if blocks ~ ~ ~ ~ ~ ~ -6 57 4 all if block ~ ~ ~2 polished_andesite as @s run tp @s ~1 ~ ~
+execute as @e[name="Head"] at @s if blocks ~ ~ ~ ~ ~ ~ -5 57 4 all as @e[name="Pointer"] at @s if blocks ~ ~ ~ ~ ~ ~ -6 57 4 all if block ~ ~ ~2 polished_diorite as @s run tp @s ~-1 ~ ~
+execute as @e[name="Pointer"] at @s unless blocks ~ ~ ~ ~ ~ ~ -6 57 4 all run tp @s ~1 ~ ~
+execute as @e[name="Pointer"] at @s if block ~ ~ ~ gold_block run function turingmachine:reset_pointer
